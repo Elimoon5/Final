@@ -1,11 +1,28 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] != 'LoggedIn') {
+    echo '<a href="login.php">You are not logged in. Login here</a>';
+    exit;
+}
+?>
 <html>
 	<head>
 		<style>
 
 		</style>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="everything.css">
 	</head>
 	<body>
+		<div class="nav">
+		  	<a href="video.php">videos</a>
+			<a href="pictures.php">pictures</a>
+			<a href="about.php">About</a>
+			<a href="faq.php">faq</a>
+			<a href="GetTheData.php">Get The Data</a>
+			<a href="messageBoard.php">Message Board</a>
+			<a href="addUser.php">add User</a>
+			<a href="logout.php">Logout</a>
+		</div><br>
 		<h1>About Fallout</h1>
 		<ol>
 			<li class="text">Lucy MacLean</li>
@@ -23,13 +40,7 @@
 		way too fast and was very dissapointed when it ended because I wanted it to continue. There is also a game of Fallout which I also 
 		want to play.
 		</p>
-		<img src="pics/Falloutphoto.jpg" alt="Fallout image" width="350px"> 
-		<div class="sidenav">
-		  <a href="video.html">videos</a>
-		  <a href="pictures.html">pictures</a>
-		  <a href="about.html">About</a>
-		  <a href="faq.html">faq</a>
-		</div>
+		<img src="Falloutphoto.jpg" alt="Fallout image" width="350px"> 
 		<script>
 			
 		</script>

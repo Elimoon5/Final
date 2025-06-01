@@ -1,0 +1,63 @@
+body {
+  background-color: lightblue;
+}
+h1 {
+    text-align: center;
+    color: purple;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #6262e6;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 4px;
+}
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 3px;
+  position: relative;
+}
+
+#person1 {
+  float: right;
+  font-family: cursive;
+  border: 5px solid purple;
+  border-bottom: none;
+}
+#lucy {
+  float: left;
+  font-family: cursive;
+  border: 5px solid purple;
+  margin: 5px;
+}
+#person2 {
+  float: left;
+  font-family: cursive;
+  padding: 5px;
+  border: 5px solid purple;
+}
+#goodguy {
+  font-family: cursive;
+  float: right;
+  border: 5px solid purple;
+  padding: 5px;
+}
+#person3 {
+  float: right;
+  font-family: cursive;
+  padding: 5px;
+  border: 5px solid purple;
+  border-top: none;
+}
+#evilguy {
+  float: left;
+  margin-right: 10px;
+  padding: 5px;
+  border: 5px solid purple;
+}
